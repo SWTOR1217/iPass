@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		7F1ACC6E1F393EBE0023123D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ACC6C1F393EBE0023123D /* Main.storyboard */; };
 		7F1ACC701F393EBE0023123D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ACC6F1F393EBE0023123D /* Assets.xcassets */; };
 		7F1ACC731F393EBE0023123D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F1ACC711F393EBE0023123D /* LaunchScreen.storyboard */; };
+		7F1ACC7C1F396D500023123D /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1ACC7B1F396D500023123D /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		7F1ACC6F1F393EBE0023123D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1ACC721F393EBE0023123D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F1ACC741F393EBE0023123D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F1ACC7B1F396D500023123D /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F1ACC7C1F396D500023123D /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				7F1ACC671F393EBE0023123D /* iPass */,
 				7F1ACC661F393EBE0023123D /* Products */,
+				7F1ACC7A1F396D500023123D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +66,14 @@
 				7F1ACC741F393EBE0023123D /* Info.plist */,
 			);
 			path = iPass;
+			sourceTree = "<group>";
+		};
+		7F1ACC7A1F396D500023123D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F1ACC7B1F396D500023123D /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +114,7 @@
 				};
 			};
 			buildConfigurationList = 7F1ACC601F393EBE0023123D /* Build configuration list for PBXProject "iPass" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -265,6 +277,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BM4U737VDH;
 				INFOPLIST_FILE = iPass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SWTOR1217.iPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BM4U737VDH;
 				INFOPLIST_FILE = iPass/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = SWTOR1217.iPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +318,7 @@
 				7F1ACC791F393EBE0023123D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
